@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "telemetry-parser": {
+      "command": "python",
+      "args": ["mcp_servers/telemetry-server/server.py"]
+    },
+    "asset-allocator": {
+      "command": "python",
+      "args": ["mcp_servers/asset_server/server.py"]
+    },
+    "incident-coordinator": {
+      "command": "python",
+      "args": ["mcp_servers/incident_server/server.py"]
+    }
+  }
+}

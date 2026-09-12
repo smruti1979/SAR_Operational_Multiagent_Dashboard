@@ -1,0 +1,27 @@
+/* style.css */
+.centered-title {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.centered-subheader {
+    text-align: center;
+    color: #555555; 
+    margin-top: 0px;
+    margin-bottom: 0px; /* Force zero bottom margin on the text */
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* TARGET STREAMLIT'S INTERNAL BLOCKS TO REMOVE GAP */
+[data-testid="stVerticalBlock"] > div:has(.centered-subheader) {
+    margin-bottom: -15px !important; /* Pulls the next element (the line) upward */
+}
+
+/* Optional: Minimize the line container's top margin if needed */
+[data-testid="stVerticalBlock"] > div:has(hr) {
+    margin-top: 0px !important;
+}

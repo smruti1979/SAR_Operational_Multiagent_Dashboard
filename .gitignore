@@ -1,0 +1,34 @@
+# === Python Environment Caches ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Shared Operational Logs Folder ===
+# We preserve the directory structure but keep the telemetry files off GitHub
+core_audit_logs/*
+!.gitignore
+
+# === IDE Configurations ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# === Docker Volume Data Artifacts ===
+.docker/
+*.db
+*.sqlite3
+
+# === System Files ===
+.DS_Store
+Thumbs.db

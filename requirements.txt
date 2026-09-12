@@ -1,0 +1,18 @@
+streamlit
+streamlit-autorefresh>=1.0.0
+# Model Context Protocol SDK
+mcp>=1.0.0,<2.0.0
+anyio>=4.0.0
+# Database & Caching Drivers
+psycopg2-binary>=2.9.9
+pandas>=2.0.0
+redis>=5.0.1
+kafka-python-ng>=2.2.2
+
+# LLM Orchestration Framework
+langgraph>=0.0.10
+langchain-core>=0.1.0
+
+# Environment Management
+python-dotenv>=1.0.1
+requests
