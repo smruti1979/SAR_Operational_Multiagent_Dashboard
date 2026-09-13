@@ -1,5 +1,7 @@
 # COSPAS-SARSAT Multi-Agent Search & Rescue (SAR) Operational System
 
+![SAR Distress Handling Architecture](images/SAR_Distress_handling_architecture.jpg)
+
 A containerized geospatial telemetry processing platform and real-time incident command interface for simulating search-and-rescue operations. The platform ingests simulated **406MHz satellite distress bursts** over an Apache Kafka event bus, evaluates them using a **LangGraph multi-agent orchestration engine**, generates natural-language incident summaries through a local **Ollama LLM compute tier**, and maintains situational awareness in a **PostGIS spatial database**.
 
 The stack is fully containerized and uses the **Model Context Protocol (MCP)** over stdio to decouple agent decision-making from infrastructure tools.
